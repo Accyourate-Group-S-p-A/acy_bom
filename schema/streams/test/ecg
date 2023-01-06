@@ -1,0 +1,10 @@
+{
+    "ts": 1642519265743,    
+    "ecg": {
+        "device_id": "acy3_ABC789",
+        "frequency": 250,
+        "ts_start": 0,
+        "ts_stop": 1642519265743,
+        "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
+    }
+}
