@@ -1,0 +1,113 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "ts",
+        "device_id",
+        "ecg"
+    ],
+    "properties": {
+        "ts": {
+            "type": "integer",
+            "default": 0,
+            "title": "The ts Schema",
+            "examples": [
+                1642519265743
+            ]
+        },
+        "device_id": {
+            "type": "string",
+            "default": "",
+            "title": "The device_id Schema",
+            "examples": [
+                "acy3_ABC789"
+            ]
+        },
+        "ecg": {
+            "type": "object",
+            "default": {},
+            "title": "The ecg Schema",
+            "required": [
+                "frequency",
+                "ts_start",
+                "ts_stop",
+                "data",
+                "device_id",
+                "mtype"
+            ],
+            "properties": {
+                "frequency": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The frequency Schema",
+                    "examples": [
+                        250
+                    ]
+                },
+                "ts_start": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The ts_start Schema",
+                    "examples": [
+                        1642519265743
+                    ]
+                },
+                "ts_stop": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The ts_stop Schema",
+                    "examples": [
+                        1642519265743
+                    ]
+                },
+                "data": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The data Schema",
+                    "examples": [
+                        "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
+                    ]
+                },
+                "device_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The device_id Schema",
+                    "examples": [
+                        "acy3_ABC789"
+                    ]
+                },
+                "mtype": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The mtype Schema",
+                    "examples": [
+                        "ecg"
+                    ]
+                }
+            },
+            "examples": [{
+                "frequency": 250,
+                "ts_start": 1642519265743,
+                "ts_stop": 1642519265743,
+                "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
+                "device_id": "acy3_ABC789",
+                "mtype": "ecg"
+            }]
+        }
+    },
+    "examples": [{
+        "ts": 1642519265743,
+        "device_id": "acy3_ABC789",
+        "ecg": {
+            "frequency": 250,
+            "ts_start": 1642519265743,
+            "ts_stop": 1642519265743,
+            "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
+            "device_id": "acy3_ABC789",
+            "mtype": "ecg"
+        }
+    }]
+}
