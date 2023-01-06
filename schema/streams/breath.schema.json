@@ -1,0 +1,92 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "ts",
+        "breath"
+    ],
+    "properties": {
+        "ts": {
+            "type": "integer",
+            "default": 0,
+            "title": "The ts Schema",
+            "examples": [
+                1642519265743
+            ]
+        },
+        "breath": {
+            "type": "object",
+            "default": {},
+            "title": "The breath Schema",
+            "required": [
+                "device_id",
+                "frequency",
+                "ts_start",
+                "ts_stop",
+                "data"
+            ],
+            "properties": {
+                "device_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The device_id Schema",
+                    "examples": [
+                        "acy3_123ABC"
+                    ]
+                },
+                "frequency": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The frequency Schema",
+                    "examples": [
+                        250
+                    ]
+                },
+                "ts_start": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The ts_start Schema",
+                    "examples": [
+                        1642519265743
+                    ]
+                },
+                "ts_stop": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The ts_stop Schema",
+                    "examples": [
+                        1642519265743
+                    ]
+                },
+                "data": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The data Schema",
+                    "examples": [
+                        "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/"
+                    ]
+                }
+            },
+            "examples": [{
+                "device_id": "acy3_123ABC",
+                "frequency": 250,
+                "ts_start": 1642519265743,
+                "ts_stop": 1642519265743,
+                "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/"
+            }]
+        }
+    },
+    "examples": [{
+        "ts": 1642519265743,
+        "breath": {
+            "device_id": "acy3_123ABC",
+            "frequency": 250,
+            "ts_start": 1642519265743,
+            "ts_stop": 1642519265743,
+            "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/"
+        }
+    }]
+}
