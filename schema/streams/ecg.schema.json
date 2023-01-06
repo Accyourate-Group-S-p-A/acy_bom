@@ -6,7 +6,6 @@
     "title": "Root Schema",
     "required": [
         "ts",
-        "device_id",
         "ecg"
     ],
     "properties": {
@@ -18,27 +17,26 @@
                 1642519265743
             ]
         },
-        "device_id": {
-            "type": "string",
-            "default": "",
-            "title": "The device_id Schema",
-            "examples": [
-                "acy3_ABC789"
-            ]
-        },
         "ecg": {
             "type": "object",
             "default": {},
             "title": "The ecg Schema",
             "required": [
+                "device_id",
                 "frequency",
                 "ts_start",
                 "ts_stop",
-                "data",
-                "device_id",
-                "mtype"
+                "data"
             ],
             "properties": {
+                "device_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The device_id Schema",
+                    "examples": [
+                        "acy3_ABC789"
+                    ]
+                },
                 "frequency": {
                     "type": "integer",
                     "default": 0,
@@ -52,7 +50,7 @@
                     "default": 0,
                     "title": "The ts_start Schema",
                     "examples": [
-                        1642519265743
+                        0
                     ]
                 },
                 "ts_stop": {
@@ -70,44 +68,25 @@
                     "examples": [
                         "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
                     ]
-                },
-                "device_id": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The device_id Schema",
-                    "examples": [
-                        "acy3_ABC789"
-                    ]
-                },
-                "mtype": {
-                    "type": "string",
-                    "default": "",
-                    "title": "The mtype Schema",
-                    "examples": [
-                        "ecg"
-                    ]
                 }
             },
             "examples": [{
-                "frequency": 250,
-                "ts_start": 1642519265743,
-                "ts_stop": 1642519265743,
-                "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
                 "device_id": "acy3_ABC789",
-                "mtype": "ecg"
+                "frequency": 250,
+                "ts_start": 0,
+                "ts_stop": 1642519265743,
+                "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
             }]
         }
     },
     "examples": [{
         "ts": 1642519265743,
-        "device_id": "acy3_ABC789",
         "ecg": {
-            "frequency": 250,
-            "ts_start": 1642519265743,
-            "ts_stop": 1642519265743,
-            "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
             "device_id": "acy3_ABC789",
-            "mtype": "ecg"
+            "frequency": 250,
+            "ts_start": 0,
+            "ts_stop": 1642519265743,
+            "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
         }
     }]
 }
