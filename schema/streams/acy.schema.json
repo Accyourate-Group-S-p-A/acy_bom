@@ -3,10 +3,7 @@
     "$id": "http://example.com/example.json",
     "type": "object",
     "default": {},
-    "title": "Root Schema",
-    "required": [
-        "ts"
-    ],
+    "title": "Root Schema",    
     "properties": {       
         "ecg": {
             "type": "object",
