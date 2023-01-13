@@ -7,15 +7,7 @@
     "required": [
         "ts"
     ],
-    "properties": {
-        "ts": {
-            "type": "integer",
-            "default": 0,
-            "title": "The ts Schema",
-            "examples": [
-                1642519265743
-            ]
-        },
+    "properties": {       
         "ecg": {
             "type": "object",
             "default": {},
@@ -140,7 +132,7 @@
         }
     },
     "examples": [{
-        "ts": 1642519265743,
+         
         "ecg": {
             "device_id": "acy3_ABC789",
             "frequency": 250,
