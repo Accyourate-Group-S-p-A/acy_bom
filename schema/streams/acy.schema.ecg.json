@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "ecg": {
+      "type": "object",
+      "properties": {
+        "device_id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "frequency": {
+          "type": "integer"
+        },
+        "ts_start": {
+          "type": "integer"
+        },
+        "ts_stop": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "string"
+        },
+        "backup_counter": {
+          "type": "integer"
+        },
+        "app_version": {
+          "type": "string"
+        },
+        "phone_model": {
+          "type": "string"
+        },
+        "os_version": {
+          "type": "string"
+        },
+        "session_identification_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "device_id",
+        "username",
+        "frequency",
+        "ts_start",
+        "ts_stop",
+        "data",
+        "backup_counter",
+        "app_version",
+        "phone_model",
+        "os_version",
+        "session_identification_code"
+      ]
+    }
+  },
+  "required": [
+    "ecg"
+  ]
+}
