@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "temperature": {
+      "type": "object",
+      "properties": {
+        "device_id": {
+          "type": "string"
+        },
+        "username": {
+          "type": "string"
+        },
+        "ts_start": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "string"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "session_identification_code": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "device_id",
+        "username",
+        "ts_start",
+        "data",
+        "unit",
+        "session_identification_code"
+      ]
+    }
+  },
+  "required": [
+    "temperature"
+  ]
+}
