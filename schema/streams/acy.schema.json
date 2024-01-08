@@ -11,10 +11,16 @@
             "title": "The ecg Schema",
             "required": [
                 "device_id",
+                "username",
                 "frequency",
                 "ts_start",
                 "ts_stop",
-                "data"
+                "data",
+                "backup_counter",
+                "app_version",
+                "phone_model",
+                "os_version",
+                "session_identification_code"        
             ],
             "properties": {
                 "device_id": {
@@ -23,6 +29,14 @@
                     "title": "The device_id Schema",
                     "examples": [
                         "acy3_ABC789"
+                    ]
+                },
+                "username": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The username Schema",
+                    "examples": [
+                        "acy_user_1"
                     ]
                 },
                 "frequency": {
@@ -56,14 +70,60 @@
                     "examples": [
                         "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
                     ]
+                },
+                "backup_counter": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The backup_counter Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "app_version": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The app_version Schema",
+                    "examples": [
+                        "1.0.0"
+                    ]
+                },
+                "phone_model": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The phone_model Schema",
+                    "examples": [
+                        "motorola moto e(7) plus"
+                    ]
+                },
+                "os_version": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The os_version Schema",
+                    "examples": [
+                        "Android 10"
+                    ]
+                },
+                "session_identification_code": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The session_identification_code Schema",
+                    "examples": [
+                        "test"
+                    ]
                 }
             },
             "examples": [{
                 "device_id": "acy3_ABC789",
+                "username": "acy_user_1",
                 "frequency": 250,
                 "ts_start": 0,
                 "ts_stop": 1642519265743,
-                "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
+                "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
+                "backup_counter": 0,
+                "app_version": "1.0.0",
+                "phone_model": "motorola moto e(7) plus",
+                "os_version": "Android 10",
+                "session_identification_code": "test"
             }]
         },
         "breath": {
@@ -75,7 +135,12 @@
                 "frequency",
                 "ts_start",
                 "ts_stop",
-                "data"
+                "data",
+                "backup_counter",
+                "app_version",
+                "phone_model",
+                "os_version",
+                "session_identification_code"    
             ],
             "properties": {
                 "device_id": {
@@ -84,6 +149,14 @@
                     "title": "The device_id Schema",
                     "examples": [
                         "Holter_V2"
+                    ]
+                },
+                "username": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The username Schema",
+                    "examples": [
+                        "acy_user_1"
                     ]
                 },
                 "frequency": {
@@ -117,32 +190,161 @@
                     "examples": [
                         "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/"
                     ]
+                },
+                "backup_counter": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The backup_counter Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "app_version": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The app_version Schema",
+                    "examples": [
+                        "1.0.0"
+                    ]
+                },
+                "phone_model": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The phone_model Schema",
+                    "examples": [
+                        "motorola moto e(7) plus"
+                    ]
+                },
+                "os_version": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The os_version Schema",
+                    "examples": [
+                        "Android 10"
+                    ]
+                },
+                "session_identification_code": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The session_identification_code Schema",
+                    "examples": [
+                        "test"
+                    ]
                 }
             },
             "examples": [{
                 "device_id": "Holter_V2",
+                "username": "acy_user_1",
                 "frequency": 250,
                 "ts_start": 1642519265743,
                 "ts_stop": 1642519265743,
-                "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/"
+                "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/",
+                "backup_counter": 0,
+                "app_version": "1.0.0",
+                "phone_model": "motorola moto e(7) plus",
+                "os_version": "Android 10",
+                "session_identification_code": "test"
             }]
+        },
+        "temperature": {
+            "type": "object",
+            "default": {},
+            "title": "The temperature Schema",
+            "required": [
+                "device_id",
+                "username",
+                "ts_start",
+                "data",
+                "unit",
+                "session_identification_code"
+            ],
+            "properties": {
+                "device_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The device_id Schema",
+                    "examples": [
+                        "acy3_ABC789"
+                    ]
+                },
+                "username": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The username Schema",
+                    "examples": [
+                        "acy_user_1"
+                    ]
+                },
+                "ts_start": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The ts_start Schema",
+                    "examples": [
+                        1642519265743
+                    ]
+                },
+                "data": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The data Schema",
+                    "examples": [
+                        "8526"
+                    ]
+                },
+                "unit": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The unit Schema",
+                    "examples": [
+                        "C"
+                    ]
+                },
+                "session_identification_code": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The session_identification_code Schema",
+                    "examples": [
+                        "test"
+                    ]
+                }
+            } 
         }
     },
     "examples": [{
          
         "ecg": {
             "device_id": "acy3_ABC789",
+            "username": "acy_user_1",
             "frequency": 250,
             "ts_start": 0,
             "ts_stop": 1642519265743,
-            "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA="
+            "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
+            "backup_counter": 0,
+            "app_version": "1.0.0",
+            "phone_model": "motorola moto e(7) plus",
+            "os_version": "Android 10",
+            "session_identification_code": "test"
         },
         "breath": {
             "device_id": "Holter_V2",
+            "username": "acy_user_1",
             "frequency": 250,
             "ts_start": 1642519265743,
             "ts_stop": 1642519265743,
-            "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/"
+            "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/",
+            "backup_counter": 0,
+            "app_version": "1.0.0",
+            "phone_model": "motorola moto e(7) plus",
+            "os_version": "Android 10",
+            "session_identification_code": "test"
+        },
+        "temperature": {
+            "device_id": "acy3_ABC789",
+            "username": "acy_user_1",
+            "ts_start": 1642519265743,
+            "data": "8537",
+            "unit": "C",
+            "session_identification_code": "test"
         }
     }],
     "anyOf": [{
@@ -153,6 +355,11 @@
     {
         "required": [
             "breath"
+        ]
+    },
+    {
+        "required": [
+            "temperature"
         ]
     }]
 }
