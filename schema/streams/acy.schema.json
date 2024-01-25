@@ -308,6 +308,143 @@
                     ]
                 }
             } 
+        },
+        "accelerometer": {
+            "type": "object",
+            "default": {},
+            "title": "The accelerometer Schema",
+            "required": [
+                "device_id",
+                "username",
+                "frequency",
+                "ts_start",
+                "ts_stop",
+                "X",
+                "Y",
+                "Z",
+                "session_identification_code"
+            ],
+            "properties": {
+                "device_id": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The device_id Schema",
+                    "examples": [
+                        "acy3_ABC789"
+                    ]
+                },
+                "username": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The username Schema",
+                    "examples": [
+                        "acy_user_1"
+                    ]
+                },
+                "frequency": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The frequency Schema",
+                    "examples": [
+                        250
+                    ]
+                },
+                "ts_start": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The ts_start Schema",
+                    "examples": [
+                        1642519265743
+                    ]
+                },
+                "ts_stop": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The ts_stop Schema",
+                    "examples": [
+                        1642519265743
+                    ]
+                },
+                "X": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The X coordinate Schema",
+                    "required": [
+                        "data"
+                    ],
+                    "properties": {
+                        "data": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The data Schema",
+                            "examples": [
+                                "H4sIAAAAAAAAAI2U0Q3DMAhEV+kA/TAmTtpZqu6/RlXFlnzohfjrhGR8Bwd89tbcn48/tBnqIfCewQRqT9jP9AKfDQYlOl8Wn9OrC8PJXiQKtAoHQKrFQTXnIWC1CETbCxv12RxlAkOEFfn9kyKgCSawXRc2rOpRFavabCoDWlWEvQlDA76gzK7lBgYE/MxkEXTqZIS1n8PbF4jPjNPRyABNHW0VnVl7hjIHYKKFmU8aGaZu4c/7vQ2wJVF2l4wih6lLXSFJ/dYprGxx1iVqQUn6GTauzsBHFfnwQCR3IvhOBzdjX1EWmvX9ARKRcYzdBgAA"
+                            ]
+                        }
+                    }
+                },
+                "Y": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The Y coordinate Schema",
+                    "required": [
+                        "data"
+                    ],
+                    "properties": {
+                        "data": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The data Schema",
+                            "examples": [
+                                "H4sIAAAAAAAAAI2U0RXDIAhFV+kA/VDQpM7S0/3XaMQGeIZ68nMNaiA8IG8ifj4ovzpaR0XsB9J2gnJH6iA1DawgdVA6+mniH3Jrau7n6QAGd65aEI2uIee96YDAX+SUk0LNMC1zwPcQvWF7TntVQ8RJWABRzQmGqkVOZc9ltE7LvNSrVn8bZBJR9qTwrh77GVyeBgKZXAHE3BSMbYYdNh2YOfKtCrlSll0SVRA7527NXT0m1Qo0UjhCDNHsHrcViMGfC373wy3LaMRt8rBp8mFutXKBhXWRC66rwlm0vIN78z+lLlEibT9fyM4Xa+8EAAA="
+                            ]
+                        }
+                    }
+                },
+                "Z": {
+                    "type": "object",
+                    "default": {},
+                    "title": "The Z coordinate Schema",
+                    "required": [
+                        "data"
+                    ],
+                    "properties": {
+                        "data": {
+                            "type": "string",
+                            "default": "",
+                            "title": "The data Schema",
+                            "examples": [
+                                "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
+                            ]
+                        }
+                    }
+                },
+                "session_identification_code": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The session_identification_code Schema",
+                    "examples": [
+                        "test"
+                    ]
+                }
+            },
+            "examples": [{
+                "device_id": "acy3_D8030C",
+                "username": "accyourate.main@gmail.com",
+                "session_identification_code": "acy_2",
+                "frequency": 250,
+                "ts_start": 1701687712123,
+                "ts_stop": 1701687712123,
+                "X": {
+                  "data": "H4sIAAAAAAAAAI2U0Q3DMAhEV+kA/TAmTtpZqu6/RlXFlnzohfjrhGR8Bwd89tbcn48/tBnqIfCewQRqT9jP9AKfDQYlOl8Wn9OrC8PJXiQKtAoHQKrFQTXnIWC1CETbCxv12RxlAkOEFfn9kyKgCSawXRc2rOpRFavabCoDWlWEvQlDA76gzK7lBgYE/MxkEXTqZIS1n8PbF4jPjNPRyABNHW0VnVl7hjIHYKKFmU8aGaZu4c/7vQ2wJVF2l4wih6lLXSFJ/dYprGxx1iVqQUn6GTauzsBHFfnwQCR3IvhOBzdjX1EWmvX9ARKRcYzdBgAA"
+                },
+                "Y": {
+                  "data": "H4sIAAAAAAAAAI2U0RXDIAhFV+kA/VDQpM7S0/3XaMQGeIZ68nMNaiA8IG8ifj4ovzpaR0XsB9J2gnJH6iA1DawgdVA6+mniH3Jrau7n6QAGd65aEI2uIee96YDAX+SUk0LNMC1zwPcQvWF7TntVQ8RJWABRzQmGqkVOZc9ltE7LvNSrVn8bZBJR9qTwrh77GVyeBgKZXAHE3BSMbYYdNh2YOfKtCrlSll0SVRA7527NXT0m1Qo0UjhCDNHsHrcViMGfC373wy3LaMRt8rBp8mFutXKBhXWRC66rwlm0vIN78z+lLlEibT9fyM4Xa+8EAAA="
+                },
+                "Z": {
+                  "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
+                }
+              }]
         }
     },
     "examples": [{
@@ -345,7 +482,24 @@
             "data": "8537",
             "unit": "C",
             "session_identification_code": "test"
-        }
+        },
+        "accelerometer": {
+            "device_id": "acy3_D8030C",
+            "username": "accyourate.main@gmail.com",
+            "session_identification_code": "acy_2",
+            "frequency": 250,
+            "ts_start": 1701687712123,
+            "ts_stop": 1701687712123,
+            "X": {
+              "data": "H4sIAAAAAAAAAI2U0Q3DMAhEV+kA/TAmTtpZqu6/RlXFlnzohfjrhGR8Bwd89tbcn48/tBnqIfCewQRqT9jP9AKfDQYlOl8Wn9OrC8PJXiQKtAoHQKrFQTXnIWC1CETbCxv12RxlAkOEFfn9kyKgCSawXRc2rOpRFavabCoDWlWEvQlDA76gzK7lBgYE/MxkEXTqZIS1n8PbF4jPjNPRyABNHW0VnVl7hjIHYKKFmU8aGaZu4c/7vQ2wJVF2l4wih6lLXSFJ/dYprGxx1iVqQUn6GTauzsBHFfnwQCR3IvhOBzdjX1EWmvX9ARKRcYzdBgAA"
+            },
+            "Y": {
+              "data": "H4sIAAAAAAAAAI2U0RXDIAhFV+kA/VDQpM7S0/3XaMQGeIZ68nMNaiA8IG8ifj4ovzpaR0XsB9J2gnJH6iA1DawgdVA6+mniH3Jrau7n6QAGd65aEI2uIee96YDAX+SUk0LNMC1zwPcQvWF7TntVQ8RJWABRzQmGqkVOZc9ltE7LvNSrVn8bZBJR9qTwrh77GVyeBgKZXAHE3BSMbYYdNh2YOfKtCrlSll0SVRA7527NXT0m1Qo0UjhCDNHsHrcViMGfC373wy3LaMRt8rBp8mFutXKBhXWRC66rwlm0vIN78z+lLlEibT9fyM4Xa+8EAAA="
+            },
+            "Z": {
+              "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
+            }
+          }
     }],
     "anyOf": [{
         "required": [
@@ -360,6 +514,11 @@
     {
         "required": [
             "temperature"
+        ]
+    },
+    {
+        "required": [
+            "accelerometer"
         ]
     }]
 }
