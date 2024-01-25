@@ -309,7 +309,7 @@
                 }
             } 
         },
-        "accelerometer": {
+        "accelerometers": {
             "type": "object",
             "default": {},
             "title": "The accelerometer Schema",
@@ -483,7 +483,7 @@
             "unit": "C",
             "session_identification_code": "test"
         },
-        "accelerometer": {
+        "accelerometers": {
             "device_id": "acy3_D8030C",
             "username": "accyourate.main@gmail.com",
             "session_identification_code": "acy_2",
