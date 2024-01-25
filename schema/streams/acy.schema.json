@@ -518,7 +518,7 @@
     },
     {
         "required": [
-            "accelerometer"
+            "accelerometers"
         ]
     }]
 }
