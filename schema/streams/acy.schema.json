@@ -3,8 +3,8 @@
     "$id": "http://example.com/example.json",
     "type": "object",
     "default": {},
-    "title": "Root Schema",    
-    "properties": {       
+    "title": "Root Schema",
+    "properties": {
         "ecg": {
             "type": "object",
             "default": {},
@@ -20,7 +20,7 @@
                 "app_version",
                 "phone_model",
                 "os_version",
-                "session_identification_code"        
+                "session_identification_code"
             ],
             "properties": {
                 "device_id": {
@@ -112,19 +112,21 @@
                     ]
                 }
             },
-            "examples": [{
-                "device_id": "acy3_ABC789",
-                "username": "acy_user_1",
-                "frequency": 250,
-                "ts_start": 0,
-                "ts_stop": 1642519265743,
-                "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
-                "backup_counter": 0,
-                "app_version": "1.0.0",
-                "phone_model": "motorola moto e(7) plus",
-                "os_version": "Android 10",
-                "session_identification_code": "test"
-            }]
+            "examples": [
+                {
+                    "device_id": "acy3_ABC789",
+                    "username": "acy_user_1",
+                    "frequency": 250,
+                    "ts_start": 0,
+                    "ts_stop": 1642519265743,
+                    "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
+                    "backup_counter": 0,
+                    "app_version": "1.0.0",
+                    "phone_model": "motorola moto e(7) plus",
+                    "os_version": "Android 10",
+                    "session_identification_code": "test"
+                }
+            ]
         },
         "breath": {
             "type": "object",
@@ -140,7 +142,7 @@
                 "app_version",
                 "phone_model",
                 "os_version",
-                "session_identification_code"    
+                "session_identification_code"
             ],
             "properties": {
                 "device_id": {
@@ -232,19 +234,21 @@
                     ]
                 }
             },
-            "examples": [{
-                "device_id": "Holter_V2",
-                "username": "acy_user_1",
-                "frequency": 250,
-                "ts_start": 1642519265743,
-                "ts_stop": 1642519265743,
-                "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/",
-                "backup_counter": 0,
-                "app_version": "1.0.0",
-                "phone_model": "motorola moto e(7) plus",
-                "os_version": "Android 10",
-                "session_identification_code": "test"
-            }]
+            "examples": [
+                {
+                    "device_id": "Holter_V2",
+                    "username": "acy_user_1",
+                    "frequency": 250,
+                    "ts_start": 1642519265743,
+                    "ts_stop": 1642519265743,
+                    "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/",
+                    "backup_counter": 0,
+                    "app_version": "1.0.0",
+                    "phone_model": "motorola moto e(7) plus",
+                    "os_version": "Android 10",
+                    "session_identification_code": "test"
+                }
+            ]
         },
         "temperature": {
             "type": "object",
@@ -307,7 +311,7 @@
                         "test"
                     ]
                 }
-            } 
+            }
         },
         "accelerometers": {
             "type": "object",
@@ -428,7 +432,141 @@
                     ]
                 }
             },
-            "examples": [{
+            "examples": [
+                {
+                    "device_id": "acy3_D8030C",
+                    "username": "accyourate.main@gmail.com",
+                    "session_identification_code": "acy_2",
+                    "frequency": 250,
+                    "ts_start": 1701687712123,
+                    "ts_stop": 1701687712123,
+                    "X": {
+                        "data": "H4sIAAAAAAAAAI2U0Q3DMAhEV+kA/TAmTtpZqu6/RlXFlnzohfjrhGR8Bwd89tbcn48/tBnqIfCewQRqT9jP9AKfDQYlOl8Wn9OrC8PJXiQKtAoHQKrFQTXnIWC1CETbCxv12RxlAkOEFfn9kyKgCSawXRc2rOpRFavabCoDWlWEvQlDA76gzK7lBgYE/MxkEXTqZIS1n8PbF4jPjNPRyABNHW0VnVl7hjIHYKKFmU8aGaZu4c/7vQ2wJVF2l4wih6lLXSFJ/dYprGxx1iVqQUn6GTauzsBHFfnwQCR3IvhOBzdjX1EWmvX9ARKRcYzdBgAA"
+                    },
+                    "Y": {
+                        "data": "H4sIAAAAAAAAAI2U0RXDIAhFV+kA/VDQpM7S0/3XaMQGeIZ68nMNaiA8IG8ifj4ovzpaR0XsB9J2gnJH6iA1DawgdVA6+mniH3Jrau7n6QAGd65aEI2uIee96YDAX+SUk0LNMC1zwPcQvWF7TntVQ8RJWABRzQmGqkVOZc9ltE7LvNSrVn8bZBJR9qTwrh77GVyeBgKZXAHE3BSMbYYdNh2YOfKtCrlSll0SVRA7527NXT0m1Qo0UjhCDNHsHrcViMGfC373wy3LaMRt8rBp8mFutXKBhXWRC66rwlm0vIN78z+lLlEibT9fyM4Xa+8EAAA="
+                    },
+                    "Z": {
+                        "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
+                    }
+                }
+            ]
+        },
+        "gps": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "properties": {
+                "device_id": {
+                    "type": "string"
+                },
+                "username": {
+                    "type": "string"
+                },
+                "ts_start": {
+                    "type": "integer"
+                },
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "latitude": {
+                            "type": "number"
+                        },
+                        "longitude": {
+                            "type": "number"
+                        },
+                        "altitude": {
+                            "type": "number"
+                        },
+                        "speed": {
+                            "type": "number"
+                        },
+                        "distance": {
+                            "type": "number"
+                        },
+                        "length_unit": {
+                            "type": "string"
+                        },
+                        "speed_unit": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "latitude",
+                        "longitude",
+                        "altitude",
+                        "speed",
+                        "distance",
+                        "length_unit",
+                        "speed_unit"
+                    ]
+                },
+                "session_identification_code": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "device_id",
+                "username",
+                "ts_start",
+                "data",
+                "session_identification_code"
+            ],
+            "examples": [
+                {
+                    "device_id": "acy3_D8030C",
+                    "username": "accyourate.main@gmail.com",
+                    "session_identification_code": "acy_2",
+                    "ts_start": 1701687712123,
+                    "data": {
+                        "latitude": 44.0113073,
+                        "longitude": 12.5285691,
+                        "altitude": 33.5,
+                        "speed": 3.02,
+                        "distance": 1500.3,
+                        "length_unit": "m",
+                        "speed_unit": "m/s"
+                    }
+                }
+            ]
+        }
+    },
+    "examples": [
+        {
+            "ecg": {
+                "device_id": "acy3_ABC789",
+                "username": "acy_user_1",
+                "frequency": 250,
+                "ts_start": 0,
+                "ts_stop": 1642519265743,
+                "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
+                "backup_counter": 0,
+                "app_version": "1.0.0",
+                "phone_model": "motorola moto e(7) plus",
+                "os_version": "Android 10",
+                "session_identification_code": "test"
+            },
+            "breath": {
+                "device_id": "Holter_V2",
+                "username": "acy_user_1",
+                "frequency": 250,
+                "ts_start": 1642519265743,
+                "ts_stop": 1642519265743,
+                "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/",
+                "backup_counter": 0,
+                "app_version": "1.0.0",
+                "phone_model": "motorola moto e(7) plus",
+                "os_version": "Android 10",
+                "session_identification_code": "test"
+            },
+            "temperature": {
+                "device_id": "acy3_ABC789",
+                "username": "acy_user_1",
+                "ts_start": 1642519265743,
+                "data": "8537",
+                "unit": "C",
+                "session_identification_code": "test"
+            },
+            "accelerometers": {
                 "device_id": "acy3_D8030C",
                 "username": "accyourate.main@gmail.com",
                 "session_identification_code": "acy_2",
@@ -436,179 +574,57 @@
                 "ts_start": 1701687712123,
                 "ts_stop": 1701687712123,
                 "X": {
-                  "data": "H4sIAAAAAAAAAI2U0Q3DMAhEV+kA/TAmTtpZqu6/RlXFlnzohfjrhGR8Bwd89tbcn48/tBnqIfCewQRqT9jP9AKfDQYlOl8Wn9OrC8PJXiQKtAoHQKrFQTXnIWC1CETbCxv12RxlAkOEFfn9kyKgCSawXRc2rOpRFavabCoDWlWEvQlDA76gzK7lBgYE/MxkEXTqZIS1n8PbF4jPjNPRyABNHW0VnVl7hjIHYKKFmU8aGaZu4c/7vQ2wJVF2l4wih6lLXSFJ/dYprGxx1iVqQUn6GTauzsBHFfnwQCR3IvhOBzdjX1EWmvX9ARKRcYzdBgAA"
+                    "data": "H4sIAAAAAAAAAI2U0Q3DMAhEV+kA/TAmTtpZqu6/RlXFlnzohfjrhGR8Bwd89tbcn48/tBnqIfCewQRqT9jP9AKfDQYlOl8Wn9OrC8PJXiQKtAoHQKrFQTXnIWC1CETbCxv12RxlAkOEFfn9kyKgCSawXRc2rOpRFavabCoDWlWEvQlDA76gzK7lBgYE/MxkEXTqZIS1n8PbF4jPjNPRyABNHW0VnVl7hjIHYKKFmU8aGaZu4c/7vQ2wJVF2l4wih6lLXSFJ/dYprGxx1iVqQUn6GTauzsBHFfnwQCR3IvhOBzdjX1EWmvX9ARKRcYzdBgAA"
                 },
                 "Y": {
-                  "data": "H4sIAAAAAAAAAI2U0RXDIAhFV+kA/VDQpM7S0/3XaMQGeIZ68nMNaiA8IG8ifj4ovzpaR0XsB9J2gnJH6iA1DawgdVA6+mniH3Jrau7n6QAGd65aEI2uIee96YDAX+SUk0LNMC1zwPcQvWF7TntVQ8RJWABRzQmGqkVOZc9ltE7LvNSrVn8bZBJR9qTwrh77GVyeBgKZXAHE3BSMbYYdNh2YOfKtCrlSll0SVRA7527NXT0m1Qo0UjhCDNHsHrcViMGfC373wy3LaMRt8rBp8mFutXKBhXWRC66rwlm0vIN78z+lLlEibT9fyM4Xa+8EAAA="
+                    "data": "H4sIAAAAAAAAAI2U0RXDIAhFV+kA/VDQpM7S0/3XaMQGeIZ68nMNaiA8IG8ifj4ovzpaR0XsB9J2gnJH6iA1DawgdVA6+mniH3Jrau7n6QAGd65aEI2uIee96YDAX+SUk0LNMC1zwPcQvWF7TntVQ8RJWABRzQmGqkVOZc9ltE7LvNSrVn8bZBJR9qTwrh77GVyeBgKZXAHE3BSMbYYdNh2YOfKtCrlSll0SVRA7527NXT0m1Qo0UjhCDNHsHrcViMGfC373wy3LaMRt8rBp8mFutXKBhXWRC66rwlm0vIN78z+lLlEibT9fyM4Xa+8EAAA="
                 },
                 "Z": {
-                  "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
+                    "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
                 }
-              }]
-        },
-        "gps": {
-            "$schema": "http://json-schema.org/draft-04/schema#",
-            "type": "object",
-            "properties": {
-              "device_id": {
-                "type": "string"
-              },
-              "username": {
-                "type": "string"
-              },
-              "ts_start": {
-                "type": "integer"
-              },
-              "data": {
-                "type": "object",
-                "properties": {
-                  "latitude": {
-                    "type": "number"
-                  },
-                  "longitude": {
-                    "type": "number"
-                  },
-                  "altitude": {
-                    "type": "number"
-                  },
-                  "speed": {
-                    "type": "number"
-                  },
-                  "distance": {
-                    "type": "number"
-                  },
-                  "length_unit": {
-                    "type": "string"
-                  },
-                  "speed_unit": {
-                    "type": "string"
-                  }
-                },
-                "required": [
-                  "latitude",
-                  "longitude",
-                  "altitude",
-                  "speed",
-                  "distance",
-                  "length_unit",
-                  "speed_unit"
-                ]
-              },
-              "session_identification_code": {
-                "type": "string"
-              }
             },
-            "required": [
-              "device_id",
-              "username",
-              "ts_start",
-              "data",
-              "session_identification_code"
-            ],
-            "example": {
+            "gps": {
                 "device_id": "acy3_D8030C",
                 "username": "accyourate.main@gmail.com",
                 "session_identification_code": "acy_2",
                 "ts_start": 1701687712123,
                 "data": {
-                  "latitude": 44.0113073,
-                  "longitude" : 12.5285691,
-                  "altitude" : 33.5,
-                  "speed" : 3.02,
-                  "distance" : 1500.3, 
-                  "length_unit" : "m",
-                  "speed_unit" : "m/s"
+                    "latitude": 44.0113073,
+                    "longitude": 12.5285691,
+                    "altitude": 33.5,
+                    "speed": 3.02,
+                    "distance": 1500.3,
+                    "length_unit": "m",
+                    "speed_unit": "m/s"
                 }
             }
         }
-    },
-    "examples": [{
-         
-        "ecg": {
-            "device_id": "acy3_ABC789",
-            "username": "acy_user_1",
-            "frequency": 250,
-            "ts_start": 0,
-            "ts_stop": 1642519265743,
-            "data": "H4sIAAAAAAAAAO3IQQ2AMBQFMCsIIOQN9kemZcG/DWTs0h677tSVpL0to/p8Rp2Hc84555xzzjnnnHNux30/CxCtl7ATAAA=",
-            "backup_counter": 0,
-            "app_version": "1.0.0",
-            "phone_model": "motorola moto e(7) plus",
-            "os_version": "Android 10",
-            "session_identification_code": "test"
+    ],
+    "anyOf": [
+        {
+            "required": [
+                "ecg"
+            ]
         },
-        "breath": {
-            "device_id": "Holter_V2",
-            "username": "acy_user_1",
-            "frequency": 250,
-            "ts_start": 1642519265743,
-            "ts_stop": 1642519265743,
-            "data": "H4sIAAAAAAAAAG2U3W0AIAiEV+kATaOIirM03X+Ntg/cZ4JvF1B+joNv230M/2qfH/9oWqJ1Ep2WqC959c701/RjREVTXiPKkFc2l82EvCdqVitY8i7VsqYi70Q7kTe9C+UYZFOloSi710rbKVG8t5qXePPhjQfqyrZV6YahtPmYQul1vEa/",
-            "backup_counter": 0,
-            "app_version": "1.0.0",
-            "phone_model": "motorola moto e(7) plus",
-            "os_version": "Android 10",
-            "session_identification_code": "test"
+        {
+            "required": [
+                "breath"
+            ]
         },
-        "temperature": {
-            "device_id": "acy3_ABC789",
-            "username": "acy_user_1",
-            "ts_start": 1642519265743,
-            "data": "8537",
-            "unit": "C",
-            "session_identification_code": "test"
+        {
+            "required": [
+                "temperature"
+            ]
         },
-        "accelerometers": {
-            "device_id": "acy3_D8030C",
-            "username": "accyourate.main@gmail.com",
-            "session_identification_code": "acy_2",
-            "frequency": 250,
-            "ts_start": 1701687712123,
-            "ts_stop": 1701687712123,
-            "X": {
-              "data": "H4sIAAAAAAAAAI2U0Q3DMAhEV+kA/TAmTtpZqu6/RlXFlnzohfjrhGR8Bwd89tbcn48/tBnqIfCewQRqT9jP9AKfDQYlOl8Wn9OrC8PJXiQKtAoHQKrFQTXnIWC1CETbCxv12RxlAkOEFfn9kyKgCSawXRc2rOpRFavabCoDWlWEvQlDA76gzK7lBgYE/MxkEXTqZIS1n8PbF4jPjNPRyABNHW0VnVl7hjIHYKKFmU8aGaZu4c/7vQ2wJVF2l4wih6lLXSFJ/dYprGxx1iVqQUn6GTauzsBHFfnwQCR3IvhOBzdjX1EWmvX9ARKRcYzdBgAA"
-            },
-            "Y": {
-              "data": "H4sIAAAAAAAAAI2U0RXDIAhFV+kA/VDQpM7S0/3XaMQGeIZ68nMNaiA8IG8ifj4ovzpaR0XsB9J2gnJH6iA1DawgdVA6+mniH3Jrau7n6QAGd65aEI2uIee96YDAX+SUk0LNMC1zwPcQvWF7TntVQ8RJWABRzQmGqkVOZc9ltE7LvNSrVn8bZBJR9qTwrh77GVyeBgKZXAHE3BSMbYYdNh2YOfKtCrlSll0SVRA7527NXT0m1Qo0UjhCDNHsHrcViMGfC373wy3LaMRt8rBp8mFutXKBhXWRC66rwlm0vIN78z+lLlEibT9fyM4Xa+8EAAA="
-            },
-            "Z": {
-              "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
-            }
-          },
-          "gps": {
-            "device_id": "acy3_D8030C",
-            "username": "accyourate.main@gmail.com",
-            "session_identification_code": "acy_2",
-            "ts_start": 1701687712123,
-            "data": {
-              "latitude": 44.0113073,
-              "longitude" : 12.5285691,
-              "altitude" : 33.5,
-              "speed" : 3.02,
-              "distance" : 1500.3, 
-              "length_unit" : "m",
-              "speed_unit" : "m/s"
-            }        
-          }
-    }],
-    "anyOf": [{
-        "required": [
-            "ecg"
-        ]
-    },
-    {
-        "required": [
-            "breath"
-        ]
-    },
-    {
-        "required": [
-            "temperature"
-        ]
-    },
-    {
-        "required": [
-            "accelerometers"
-        ]
-    }]
+        {
+            "required": [
+                "accelerometers"
+            ]
+        },
+        {
+            "required": [
+                "gps"
+            ]
+        }
+    ]
 }
