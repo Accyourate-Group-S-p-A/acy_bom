@@ -445,6 +445,81 @@
                   "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
                 }
               }]
+        },
+        "gps": {
+            "$schema": "http://json-schema.org/draft-04/schema#",
+            "type": "object",
+            "properties": {
+              "device_id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "ts_start": {
+                "type": "integer"
+              },
+              "data": {
+                "type": "object",
+                "properties": {
+                  "latitude": {
+                    "type": "number"
+                  },
+                  "longitude": {
+                    "type": "number"
+                  },
+                  "altitude": {
+                    "type": "number"
+                  },
+                  "speed": {
+                    "type": "number"
+                  },
+                  "distance": {
+                    "type": "number"
+                  },
+                  "length_unit": {
+                    "type": "string"
+                  },
+                  "speed_unit": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "latitude",
+                  "longitude",
+                  "altitude",
+                  "speed",
+                  "distance",
+                  "length_unit",
+                  "speed_unit"
+                ]
+              },
+              "session_identification_code": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "device_id",
+              "username",
+              "ts_start",
+              "data",
+              "session_identification_code"
+            ],
+            "example": {
+                "device_id": "acy3_D8030C",
+                "username": "accyourate.main@gmail.com",
+                "session_identification_code": "acy_2",
+                "ts_start": 1701687712123,
+                "data": {
+                  "latitude": 44.0113073,
+                  "longitude" : 12.5285691,
+                  "altitude" : 33.5,
+                  "speed" : 3.02,
+                  "distance" : 1500.3, 
+                  "length_unit" : "m",
+                  "speed_unit" : "m/s"
+                }
+            }
         }
     },
     "examples": [{
@@ -499,6 +574,21 @@
             "Z": {
               "data": "H4sIAAAAAAAAAL2TSw7DIAxEr9IDZAEOhHCWqve/RlOUzwR/cLvo5gkhGNvD8KQQ5+mxMVwMBRgPxlrXg+d+gruzSVROoJkb6cO1XutbFWTpiZ0P6rLzAzWNvMoCrLBWOhmoOZwU7rI+1RcEz3dmxW3mueoGzu5wwO98n5kheSZbJ0SsQ83hxUE724nNhedbdco9BWX7b3re5ad0CZ7bE5k6t/OYDY+3ttq3/8W+q/ncZk9FpuCMneT/ZH7n6w0twYs54gUAAA=="
             }
+          },
+          "gps": {
+            "device_id": "acy3_D8030C",
+            "username": "accyourate.main@gmail.com",
+            "session_identification_code": "acy_2",
+            "ts_start": 1701687712123,
+            "data": {
+              "latitude": 44.0113073,
+              "longitude" : 12.5285691,
+              "altitude" : 33.5,
+              "speed" : 3.02,
+              "distance" : 1500.3, 
+              "length_unit" : "m",
+              "speed_unit" : "m/s"
+            }        
           }
     }],
     "anyOf": [{
